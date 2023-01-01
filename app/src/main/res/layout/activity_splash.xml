@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="false"
+    tools:context=".activity.Base.SplashActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/doodles"
+        android:alpha="0.40"
+        android:backgroundTint="@color/button_green"
+        android:contentDescription="@string/app_name" />
+
+    <!--Logo section-->
+    <LinearLayout
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_250sdp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/dealer_logo"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:text="@string/princemart"
+            android:textColor="@color/white"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:text="@string/dealer"
+            android:textColor="@color/white"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+
+</FrameLayout>

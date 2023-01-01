@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navEmployeeId"
+        android:title="@string/employee"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/navWithdrawId"
+        android:title="@string/withdraw"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/navTransactionId"
+        android:title="@string/transaction_"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/navEarningId"
+        android:title="@string/earning"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/navTransferByScanId"
+        android:title="@string/transfer_by_qr"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/navProfileId"
+        android:title="@string/profile"
+        app:showAsAction="never" />
+
+    <item android:title="@string/about_company">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/navPrivacyPolicyId"
+                    android:title="@string/privacy_policy"
+                    app:showAsAction="never" />
+
+                <item
+                    android:id="@+id/navTermsAndConditionId"
+                    android:title="@string/terms_conditions"
+                    app:showAsAction="never" />
+
+                <item
+                    android:id="@+id/navAboutUsId"
+                    android:title="@string/about"
+                    app:showAsAction="never" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/navLogOutId"
+        android:title="@string/logout"
+        app:showAsAction="never" />
+</menu>

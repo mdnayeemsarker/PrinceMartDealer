@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "177304365260",
+    "project_id": "princemart-dealer",
+    "storage_bucket": "princemart-dealer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177304365260:android:37974ef0d7da2fe33bfa69",
+        "android_client_info": {
+          "package_name": "com.princemartbd.dealer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177304365260-l6en8n0j6s3cp6jtv817s3vf64o4s1pi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM7caWdERwUVQdQ417zgpciowlIIYdvec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177304365260-l6en8n0j6s3cp6jtv817s3vf64o4s1pi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

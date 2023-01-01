@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@color/colorSecondary"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_30sdp"
+    tools:ignore="UseCompoundDrawables">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_error"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:padding="5dp"
+        android:text="@string/you_have_not_enough_amount_please_check_your_balance"
+        android:textColor="@color/black"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/card_shadow"
+        android:backgroundTint="@color/colorPrimary"
+        android:paddingTop="@dimen/_18sdp"
+        android:paddingBottom="@dimen/_18sdp"
+        android:text="@string/ok"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+</LinearLayout>

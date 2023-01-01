@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".activity.Base.ForgotPassActivity">
+
+    <!--Logo section-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardCornerRadius="@dimen/_50sdp">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/dealer_logo"
+                tools:ignore="ImageContrastCheck" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="@string/princemart"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/dealer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_curve"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf">
+
+        <!-- Verify lyt -->
+        <ScrollView
+            android:id="@+id/lytVerify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_curve"
+            android:backgroundTint="@color/white"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_curve"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical"
+                android:padding="40dp">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/verify_your_mobile"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="@color/transparent"
+                    android:orientation="horizontal"
+                    android:weightSum="15">
+
+<!--                    <com.hbb20.CountryCodePicker-->
+<!--                        android:id="@+id/edtCountryCodePicker"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="10"-->
+<!--                        android:gravity="center_horizontal"-->
+<!--                        android:visibility="visible"-->
+<!--                        app:ccpDialog_showFastScroller="true"-->
+<!--                        app:ccp_showArrow="false"-->
+<!--                        app:ccp_showNameCode="false"-->
+<!--                        app:ccp_textSize="10sp" />-->
+
+                    <TextView
+                        android:id="@+id/tvCountryCodePicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="10"
+                        android:gravity="center"
+                        android:visibility="gone" />
+
+<!--                    <View-->
+<!--                        android:layout_width="1.5dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        android:layout_marginEnd="5dp"-->
+<!--                        android:background="@color/gray" />-->
+
+                    <EditText
+                        android:id="@+id/edtMobileVerify"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@color/transparent"
+                        android:hint="@string/mobile"
+                        android:importantForAutofill="no"
+                        android:inputType="number|phone"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lytOTP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_message" />
+
+                        <TextView
+                            android:id="@+id/tvResend"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7dp"
+                            android:layout_weight="1"
+                            android:text="@string/resend"
+                            android:textColor="@color/gray"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvTimer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/gray"
+                            android:textStyle="bold"
+                            tools:ignore="RelativeOverlap" />
+                    </LinearLayout>
+
+                    <com.princemartbd.dealer.ui.PinView
+                        android:id="@+id/pinViewOTP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:inputType="number"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        app:hideLineWhenFilled="false"
+                        app:itemCount="6"
+                        app:lineColor="@color/colorPrimary"
+                        app:viewType="line" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnVerify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/card_shadow"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:text="@string/send_otp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+
+        <!--Reset Password lyt-->
+        <ScrollView
+            android:id="@+id/lytResetPass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_curve"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical"
+                android:padding="40dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/reset_pass_text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent">
+
+                    <EditText
+                        android:id="@+id/edtResetPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:drawableStart="@drawable/ic_pass"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/new_pass"
+                        android:importantForAutofill="yes"
+                        android:inputType="textPassword"
+                        android:padding="7dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        tools:ignore="Autofill" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/gray" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent">
+
+                    <EditText
+                        android:id="@+id/edtResetCPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:drawableStart="@drawable/ic_pass"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/confirm_new_pass"
+                        android:importantForAutofill="yes"
+                        android:inputType="textPassword"
+                        android:padding="7dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        tools:ignore="Autofill" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/gray" />
+
+                <Button
+                    android:id="@+id/btnResetPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/card_shadow"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:paddingTop="@dimen/_18sdp"
+                    android:paddingBottom="@dimen/_18sdp"
+                    android:text="@string/reset_pass"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
