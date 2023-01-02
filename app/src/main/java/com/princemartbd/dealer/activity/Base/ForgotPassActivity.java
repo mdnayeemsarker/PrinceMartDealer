@@ -109,7 +109,7 @@ public class ForgotPassActivity extends AppCompatActivity {
             if (result) {
                 try {
                     JSONObject object = new JSONObject(response);
-                    String phoneNumber = ("+" + session.getData(Constant.COUNTRY_CODE) + "0" + mobile);
+                    String phoneNumber = ("+" + session.getData(Constant.COUNTRY_CODE) +  mobile);
                     if (!object.getBoolean(Constant.ERROR)) {
                         generateOTP(phoneNumber);
                     } else {

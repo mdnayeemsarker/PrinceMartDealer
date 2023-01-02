@@ -11,6 +11,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
@@ -76,6 +77,7 @@ public class ApiConfig extends Application {
         if (ProgressDisplay.mProgressBar != null) {
             ProgressDisplay.mProgressBar.setVisibility(View.GONE);
         }
+        Log.d("params", params.toString());
         final ProgressDisplay progressDisplay = new ProgressDisplay(activity);
         progressDisplay.hideProgress();
         if (isProgress)
